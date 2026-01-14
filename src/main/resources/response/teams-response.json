@@ -1,0 +1,255 @@
+{
+  "get": "teams",
+  "parameters": {
+    "league": "250",
+    "season": "2024"
+  },
+  "errors": [],
+  "results": 12,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+    {
+      "team": {
+        "id": 1174,
+        "name": "Club Guarani",
+        "code": "GUA",
+        "country": "Paraguay",
+        "founded": 1903,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/1174.png"
+      },
+      "venue": {
+        "id": 19702,
+        "name": "Estadio Rogelio Silvino Livieres",
+        "address": "Avenida Artigas, Barrio Dos Bocas",
+        "city": "Asunción",
+        "capacity": 8000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/19702.png"
+      }
+    },
+    {
+      "team": {
+        "id": 1175,
+        "name": "Nacional Asuncion",
+        "code": "NAC",
+        "country": "Paraguay",
+        "founded": 1904,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/1175.png"
+      },
+      "venue": {
+        "id": 1220,
+        "name": "Estadio Arsenio Erico",
+        "address": "Avenida Pedro Juan Caballero y Batallon 40",
+        "city": "Asunción",
+        "capacity": 7000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1220.png"
+      }
+    },
+    {
+      "team": {
+        "id": 1176,
+        "name": "Cerro Porteno",
+        "code": "CER",
+        "country": "Paraguay",
+        "founded": 1912,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/1176.png"
+      },
+      "venue": {
+        "id": 22161,
+        "name": "Estadio ueno La Nueva Olla",
+        "address": "Avenida Cerro León, Bairro Obrero",
+        "city": "Asunción",
+        "capacity": 45000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/22161.png"
+      }
+    },
+    {
+      "team": {
+        "id": 1177,
+        "name": "SOL DE America",
+        "code": null,
+        "country": "Paraguay",
+        "founded": 1909,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/1177.png"
+      },
+      "venue": {
+        "id": 1224,
+        "name": "Estadio Luís Alfonso Giagni",
+        "address": "Avenida Enrique Von Poleski, Bairro Villa Elisa",
+        "city": "Asunción",
+        "capacity": 7000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1224.png"
+      }
+    },
+    {
+      "team": {
+        "id": 1179,
+        "name": "Libertad Asuncion",
+        "code": "LIB",
+        "country": "Paraguay",
+        "founded": 1905,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/1179.png"
+      },
+      "venue": {
+        "id": 19515,
+        "name": "Estadio Tigo La Huerta",
+        "address": "Avenida Artigas Nº 1.030 esq. Cusmanich",
+        "city": "Asunción",
+        "capacity": 12000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/19515.png"
+      }
+    },
+    {
+      "team": {
+        "id": 1181,
+        "name": "General Caballero",
+        "code": null,
+        "country": "Paraguay",
+        "founded": 1918,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/1181.png"
+      },
+      "venue": {
+        "id": 2799,
+        "name": "Estadio Hugo Bogado Vaceque",
+        "address": "Tte. Claudio Acosta y Calle 26 de Febrero, Barrio Zeballos Cué",
+        "city": "Asunción",
+        "capacity": 7000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/2799.png"
+      }
+    },
+    {
+      "team": {
+        "id": 1182,
+        "name": "Olimpia",
+        "code": "OLI",
+        "country": "Paraguay",
+        "founded": 1902,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/1182.png"
+      },
+      "venue": {
+        "id": 21180,
+        "name": "Estadio UENO Osvaldo Domínguez Dibb",
+        "address": "Avenida Mariscal López 1499, Bairro Las Mercedes",
+        "city": "Asunción",
+        "capacity": 22000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/21180.png"
+      }
+    },
+    {
+      "team": {
+        "id": 1183,
+        "name": "Sportivo Luqueno",
+        "code": "SPO",
+        "country": "Paraguay",
+        "founded": 1921,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/1183.png"
+      },
+      "venue": {
+        "id": 1226,
+        "name": "Estadio Feliciano Cáceres",
+        "address": "Avenida Sportivo Luqueño y Gaspar R. de Francia, Bairro Tercer",
+        "city": "Luque",
+        "capacity": 24000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1226.png"
+      }
+    },
+    {
+      "team": {
+        "id": 1187,
+        "name": "Sportivo Trinidense",
+        "code": null,
+        "country": "Paraguay",
+        "founded": 1935,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/1187.png"
+      },
+      "venue": {
+        "id": 1227,
+        "name": "Estadio Martín Torres",
+        "address": "Avenida Molas López, Barrio Santísima Trinidad",
+        "city": "Asunción",
+        "capacity": 3000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1227.png"
+      }
+    },
+    {
+      "team": {
+        "id": 2140,
+        "name": "2 de Mayo",
+        "code": "MAY",
+        "country": "Paraguay",
+        "founded": 1935,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/2140.png"
+      },
+      "venue": {
+        "id": 1212,
+        "name": "Estadio Monumental Río Parapití",
+        "address": "Avenida 12 de Junio y Alberdi",
+        "city": "Pedro Juan Caballero",
+        "capacity": 22000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1212.png"
+      }
+    },
+    {
+      "team": {
+        "id": 10487,
+        "name": "Sportivo Ameliano",
+        "code": null,
+        "country": "Paraguay",
+        "founded": 1936,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/10487.png"
+      },
+      "venue": {
+        "id": 7215,
+        "name": "Estadio José Tomás Silva",
+        "address": "Virgen del Huerto",
+        "city": "Asunción",
+        "capacity": 800,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/7215.png"
+      }
+    },
+    {
+      "team": {
+        "id": 10491,
+        "name": "Tacuary",
+        "code": null,
+        "country": "Paraguay",
+        "founded": 1923,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/10491.png"
+      },
+      "venue": {
+        "id": 7216,
+        "name": "Estadio Toribio Vargas",
+        "address": "Libertad, Barrio Jara",
+        "city": "Asunción",
+        "capacity": 3000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/7216.png"
+      }
+    }
+  ]
+}

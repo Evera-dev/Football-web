@@ -1,0 +1,26 @@
+meta {
+  name: GetRounds
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://v3.football.api-sports.io/fixtures/rounds?league=250&season=2024
+  body: none
+  auth: inherit
+}
+
+params:query {
+  league: 250
+  season: 2024
+}
+
+headers {
+  x-rapidapi-key: {{FOOTBALL_API_KEY}}
+  x-rapidapi-host: api-football-v1.p.rapidapi.com
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}

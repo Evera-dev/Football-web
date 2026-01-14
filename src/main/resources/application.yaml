@@ -1,9 +1,13 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/mydatabase?options=-c%20timezone=UTC
-    username: myuser
-    password: secret
+    url: jdbc:postgresql://localhost:5432/mydatabase
+    username: ${DB_USER:myuser}
+    password: ${DB_PASSWORD:secret}
   flyway:
-    url: jdbc:postgresql://localhost:5432/mydatabase?options=-c%20timezone=UTC
-    user: myuser
-    password: secret
+    url: jdbc:postgresql://localhost:5432/mydatabase
+    user: ${DB_USER:myuser}
+    password: ${DB_PASSWORD:secret}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "brunoFootballTest",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
