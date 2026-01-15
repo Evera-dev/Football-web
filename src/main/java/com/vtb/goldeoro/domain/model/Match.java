@@ -4,13 +4,13 @@ import java.time.LocalDateTime;
 
 public record Match(
     Long id,
-    Team homeTeam,
-    Team awayTeam,
-    League league,
+    Long homeTeamId,
+    Long awayTeamId,
+    Long leagueId,
     MatchStatus matchStatus,
     Long scoreHomeTeam,
     Long scoreAwayTeam,
-    Stadium stadium,
+    Long stadiumId,
     LocalDateTime date
 ) {
 }

@@ -6,7 +6,7 @@ public record League(
     Long id,
     String name,
     String officialName,
-    List<Matchday> matchdayList,
-    TournamentType tournamentType
+    List<Long> matchdayIdList,
+    Long seasonId
 ) {
 }
