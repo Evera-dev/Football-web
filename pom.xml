@@ -88,6 +88,11 @@
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.7.0</version>
+		</dependency>
 		<!-- Source: https://mvnrepository.com/artifact/com.microsoft.playwright/playwright -->
 		<dependency>
 			<groupId>com.microsoft.playwright</groupId>
@@ -99,6 +104,22 @@
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.11.0</version> <configuration>
+				<source>${java.version}</source>
+				<target>${java.version}</target>
+				<annotationProcessorPaths>
+					<path>
+						<groupId>org.mapstruct</groupId>
+						<artifactId>mapstruct-processor</artifactId>
+						<version>1.6.3</version>
+					</path>
+				</annotationProcessorPaths>
+			</configuration>
+			</plugin>
+
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
