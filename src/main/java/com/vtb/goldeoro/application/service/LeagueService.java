@@ -17,7 +17,7 @@ public class LeagueService implements FindAllLeaguesUseCase {
     }
 
     @Override
-    public List<League> findAll() {
+    public List<League> execute() {
         return leagueRepositoryPort.findAll();
     }
 }
