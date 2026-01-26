@@ -8,8 +8,8 @@ public record Match(
     Long awayTeamId,
     Long leagueId,
     MatchStatus matchStatus,
-    Long scoreHomeTeam,
-    Long scoreAwayTeam,
+    Integer scoreHomeTeam,
+    Integer scoreAwayTeam,
     Long stadiumId,
     LocalDateTime date
 ) {

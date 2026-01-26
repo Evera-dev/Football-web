@@ -9,5 +9,5 @@ spring:
     password: ${DB_PASSWORD:secret}
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
     show-sql: true

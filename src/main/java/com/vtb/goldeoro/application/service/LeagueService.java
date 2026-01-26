@@ -1,6 +1,7 @@
 package com.vtb.goldeoro.application.service;
 
 import com.vtb.goldeoro.application.port.in.FindAllLeaguesUseCase;
+import com.vtb.goldeoro.application.port.in.FindCurrentMatchesUseCase;
 import com.vtb.goldeoro.application.port.out.LeagueRepositoryPort;
 import com.vtb.goldeoro.domain.model.League;
 import org.springframework.stereotype.Service;
@@ -17,7 +18,7 @@ public class LeagueService implements FindAllLeaguesUseCase {
     }
 
     @Override
-    public List<League> execute() {
+    public List<League> findAllLeagues() {
         return leagueRepositoryPort.findAll();
     }
 }

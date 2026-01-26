@@ -4,6 +4,6 @@ import com.vtb.goldeoro.domain.model.League;
 
 import java.util.List;
 
-public interface FindAllLeaguesUseCase {
-    List<League> findAllLeagues();
+public interface FindCurrentMatchesUseCase {
+    List<League> findCurrentMatches();
 }
