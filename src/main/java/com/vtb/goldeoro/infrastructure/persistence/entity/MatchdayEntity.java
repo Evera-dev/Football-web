@@ -17,7 +17,7 @@ public class MatchdayEntity {
     @JoinColumn(name = "league_id")
     private LeagueEntity league;
 
-    @OneToMany(mappedBy = "match")
+    @OneToMany(mappedBy = "matchdayEntity")
     private List<MatchEntity> matchEntityList;
 
     public MatchdayEntity() {

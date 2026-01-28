@@ -23,7 +23,6 @@ public class LeagueController {
 
     @GetMapping
     public List<LeagueResponse> findAll() {
-        List<League> leagues = findAllLeaguesUseCase.findAllLeagues();
-        return leagueWebMapper.toResponseList(leagues);
+        return leagueWebMapper.toResponseList(findAllLeaguesUseCase.findAllLeagues());
     }
 }

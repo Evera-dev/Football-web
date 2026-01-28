@@ -22,7 +22,7 @@ public class TeamEntity {
     @OneToMany(mappedBy = "awayTeam")
     private List<MatchEntity> ListMatchesAway;
 
-    @ManyToMany(mappedBy = "teams")
+    @ManyToMany(mappedBy = "teamEntityList")
     private List<StadiumEntity> stadiumsList;
 
     public TeamEntity() {

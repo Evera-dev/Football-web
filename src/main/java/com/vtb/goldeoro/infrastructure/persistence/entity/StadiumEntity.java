@@ -25,7 +25,7 @@ public class StadiumEntity {
     )
     private List<TeamEntity> teamEntityList;
 
-    @OneToMany(mappedBy = "awayTeam")
+    @OneToMany(mappedBy = "stadiumEntity")
     private List<MatchEntity> listMatches;
 
     public StadiumEntity() {
