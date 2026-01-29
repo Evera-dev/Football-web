@@ -1,6 +1,7 @@
 package com.vtb.goldeoro.infrastructure.controller;
 
 import com.vtb.goldeoro.application.port.in.FindCurrentMatchesUseCase;
+import com.vtb.goldeoro.infrastructure.controller.dto.CurrentMatchResponse;
 import com.vtb.goldeoro.infrastructure.controller.dto.MatchDtoResponse;
 import com.vtb.goldeoro.infrastructure.persistence.mapper.MatchWebMapper;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,7 +22,7 @@ public class MatchController {
     }
 
     @GetMapping
-    public List<MatchDtoResponse> getCurrentMatches() {
-        return matchWebMapper.toResponseList(findCurrentMatchesUseCase.findCurrentMatches());
+    public List<CurrentMatchResponse> getCurrentMatches() {
+        return null;
     }
 }

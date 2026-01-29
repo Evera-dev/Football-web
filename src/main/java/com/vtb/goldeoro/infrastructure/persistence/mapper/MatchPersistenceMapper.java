@@ -6,6 +6,6 @@ import com.vtb.goldeoro.infrastructure.persistence.entity.MatchEntity;
 import java.util.List;
 
 public interface MatchPersistenceMapper {
-    Match toResponse(MatchEntity matchEntity);
-    List<Match> toResponseList(List<MatchEntity> matchEntityList);
+    Match toDomain(MatchEntity matchEntity);
+    List<Match> toDomainList(List<MatchEntity> matchEntityList);
 }

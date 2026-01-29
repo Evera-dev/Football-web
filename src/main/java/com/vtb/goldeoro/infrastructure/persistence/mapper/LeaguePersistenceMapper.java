@@ -9,6 +9,6 @@ import java.util.List;
 
 @Mapper(componentModel = "spring")
 public interface LeaguePersistenceMapper {
-    League toResponse(LeagueEntity leagueEntity);
-    List<League> toResponseList(List<LeagueEntity> leagueEntityList);
+    League toDomain(LeagueEntity leagueEntity);
+    List<League> toDomainList(List<LeagueEntity> leagueEntityList);
 }

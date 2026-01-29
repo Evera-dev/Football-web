@@ -2,6 +2,7 @@ package com.vtb.goldeoro.infrastructure.persistence.entity;
 
 import com.vtb.goldeoro.domain.model.MatchStatus;
 import com.vtb.goldeoro.domain.model.Matchday;
+import com.vtb.goldeoro.domain.model.Score;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
@@ -26,8 +27,9 @@ public class MatchEntity {
     private LeagueEntity leagueEntity;
 
     private MatchStatus matchStatus;
-    private Integer scoreHomeTeam;
-    private Integer scoreAwayTeam;
+
+    @Embedded
+    private ScoreEmbeddable score;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "stadium_id")
@@ -42,34 +44,18 @@ public class MatchEntity {
     public MatchEntity() {
     }
 
-    public MatchEntity(Long id, TeamEntity homeTeam, TeamEntity awayTeam, LeagueEntity leagueEntity, MatchStatus matchStatus, Integer scoreHomeTeam, Integer scoreAwayTeam, StadiumEntity stadiumEntity, MatchdayEntity matchdayEntity, LocalDateTime date) {
+    public MatchEntity(Long id, TeamEntity homeTeam, TeamEntity awayTeam, LeagueEntity leagueEntity, MatchStatus matchStatus, StadiumEntity stadiumEntity, MatchdayEntity matchdayEntity, LocalDateTime date) {
         this.id = id;
         this.homeTeam = homeTeam;
         this.awayTeam = awayTeam;
         this.leagueEntity = leagueEntity;
         this.matchStatus = matchStatus;
-        this.scoreHomeTeam = scoreHomeTeam;
-        this.scoreAwayTeam = scoreAwayTeam;
         this.stadiumEntity = stadiumEntity;
         this.matchdayEntity = matchdayEntity;
         this.date = date;
     }
 
-    public Integer getScoreHomeTeam() {
-        return scoreHomeTeam;
-    }
 
-    public void setScoreHomeTeam(Integer scoreHomeTeam) {
-        this.scoreHomeTeam = scoreHomeTeam;
-    }
-
-    public Integer getScoreAwayTeam() {
-        return scoreAwayTeam;
-    }
-
-    public void setScoreAwayTeam(Integer scoreAwayTeam) {
-        this.scoreAwayTeam = scoreAwayTeam;
-    }
 
     public Long getId() {
         return id;
